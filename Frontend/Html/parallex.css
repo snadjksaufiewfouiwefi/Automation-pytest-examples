@@ -1,0 +1,93 @@
+html {
+    box-sizing: border-box;
+}
+*, *::after, *::before {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.first-image, .second-image, .third-image, .fourth-image {
+    background-position: center;
+    background-size: cover;
+   /* opacity:0.8 ; blurryness*/
+   background-attachment: fixed;
+}
+
+.first-image{
+    background-image: url(image/cityimages/city1.jpg);
+    min-height: 500px;
+    opacity: 0.8;
+
+}
+.second-image {
+    background-image: url(image/cityimages/city2.jpg);
+    min-height: 500px;
+
+
+}
+.third-image {
+    background-image: url(image/cityimages/city3.jpg);
+    min-height: 500px;
+
+
+}
+.fourth-image {
+    background-image: url(image/cityimages/city4.jpg);
+    min-height: 500px;
+    opacity: 0.8;
+
+ } 
+
+/*.first-image, .second-image, .third-image, .fourth-image {
+    background-position: center;
+    background-size: cover;
+
+}*/
+
+section {
+    text-align: center;
+    padding: 3rem 5rem;
+}
+.section-light {
+    background-color: aliceblue;
+    color: black;
+}
+
+.section-dark {
+    background-color:darkslategray;
+    color: azure;
+
+}
+
+.image {
+   /*display: flex;
+    justify-content: center;
+    align-items: center;*/
+    position: relative;
+}
+    /*or both can use*/
+.image div {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 2rem;
+    letter-spacing:  8px;
+    text-transform: uppercase;
+}
+
+.second-image span {
+    color: rgb(87, 120, 54);
+    background-color:grey ;
+    padding: 20px;
+}
+.third-image span {
+    color: rgb(224, 224, 24);
+    background-color:grey ;
+    padding: 20px;
+}

@@ -1,0 +1,58 @@
+:root{
+    --blue-gray: #c3dade;
+    --pale-blue: #203f45;
+    --mid-gray: #797e80;
+    --jean-blue: #2d5b6e;
+    --light-blue: #649eb5;
+    --sky-blue: #b8e3f5;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,*::before, *::after {
+   box-sizing: inherit;
+}
+
+#header {
+    background-color: var(--blue-gray);
+    padding: 1.25rem 0;
+}
+
+#header .header-wrapper .logo {
+    font-size: 1.35rem;
+    line-height: 1.5rem;
+}
+#header .header-wrapper .logo {
+    color: black;
+    letter-spacing: 5px;
+}
+
+#header .header-wrapper .user-actions {
+    font-size: 1rem;
+    line-height: 1.5;
+    gap: 1rem;
+}
+
+#header .header-wrapper .user-actions .logout-btn {
+    cursor: pointer;
+    margin-left: 1.5rem;
+}
+
+#header .header-wrapper .user-actions a {
+    color: blue;
+    text-decoration: none;
+}
+
+#header .header-wrapper .user-actions a:hover {
+    text-decoration-line: underline;
+}
+
+.clear-filter {
+    margin-top: 1rem;
+}
+
+.price-filter .price-filter-select > div {
+    margin-bottom: 0.5rem;
+}

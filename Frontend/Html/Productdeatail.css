@@ -1,0 +1,45 @@
+.product-details-wrapper {
+    padding-top: 3rem ;
+}
+
+.product-img {
+    flex-basis: 60%;
+}
+
+.product-img img {
+    width: 80%;
+    margin-top: 5rem;
+}
+
+.product-details-box {
+   flex-basis: 60%; 
+}
+
+.product-name {
+    font-size: 3rem;
+}
+
+.product-price {
+    margin-top: 1.5rem;
+    font-size: 1.5rem;
+}
+
+.product-discription {
+    margin-top: 1.5rem;
+}
+
+.product-discription-title {
+    color: var(--mid-gray);
+    margin-bottom: 1rem;
+}
+
+.product-discription-data {
+font-size: 1rem;
+line-height: 1.7;
+text-align: justify;
+}
+
+.product-details-action {
+    margin-top: 1.5rem;
+    width: 250px;
+}

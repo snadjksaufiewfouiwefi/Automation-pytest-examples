@@ -1,0 +1,275 @@
+
+:root{
+    --aqua:#3D3D3D;
+    --aquamarine:#84B026;
+    --blue:#217373;
+    --teal:#173540;
+    
+}  
+html{
+    box-sizing: border-box;
+}
+*,*::after,*::before{
+     box-sizing : inherit  ;
+}
+body{
+    margin: 0%;
+    padding: 0%;
+    color: aliceblue;
+    background-color: var(--teal);
+}
+.section-turquoise {
+    background-color: var(--blue);
+}
+    h1,h2,h3{
+        margin: 0%;
+    }
+    #intro {
+        padding: 5rem 1rem 5rem 1rem;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    #intro p{
+        font-size: 1.5rem;
+        line-height: 1.5;
+    }
+
+.name span{
+    display: block;
+    color: rgb(250, 255, 240);
+    font-size: 4rem; 
+} 
+
+.profile {
+    padding-bottom:1rem;
+}
+#intro h2{
+    font-size: 3rem;
+    font-weight:normal;
+}
+#experience ul{
+    margin: 0;
+    padding: 0;
+    font-size: 1.2rem;
+}
+
+#experience li {
+    list-style-type: none;
+    padding: 1rem;
+}
+
+#experience a {
+    color: wheat;
+}
+
+#hire {
+    background-color: var(--blue);
+    width: 400px;
+    text-align: center;
+    margin: 0 auto;
+    padding: 3rem 0;
+}
+
+#hire p:last-child {
+    margin-top: 3rem;;
+}
+nav {
+    font-size: 80%;
+    padding: 1rem;
+    background-color: var(--aqua)
+}
+
+nav ul {
+   list-style-type: none;
+   padding: 0;
+   margin: 0;
+   display: flex;
+   flex-flow: row wrap;
+   justify-content: center;
+   align-items: center;
+   gap: 2rem;
+   margin-right: 2rem;
+   
+}
+
+nav a {
+    color: aliceblue;
+    font-size: 1.2rem;
+}
+
+nav a:hover {
+    color: var(--aquamarine);
+    text-decoration: underline;
+    font-size: 1.2rem;
+}
+
+nav li:first-child {
+   /* flex-grow: 1; we will write a media query to bring this back*/
+   flex-basis: 100%;;
+    font-size: 1.5rem;
+    margin-left: 3rem;
+    }
+
+.button {
+    background-color: crimson;
+    padding: 0.5rem;
+    border-radius: 5px;
+
+}
+.button:hover {
+    color: aliceblue;
+    background:linear-gradient(130deg, rgba(2,0,36,1) 0%, rgba(161,3,175,1) 34%, rgba(0,212,255,1) 100%); 
+}
+
+.gradient-section {
+    height: 2px;
+    background-color: aliceblue;
+}
+
+footer {
+    text-align: center;
+    padding: 2rem 0;
+}
+.my-picture img {
+    max-height: 500px;
+    max-width: 350px;
+    margin: 5rem 0;
+}
+#experience {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    /*gap: 4rem;*/
+    
+}
+#experience ul {
+    max-width: 400px;
+    border: solid white 2px
+    border-radius: 5px;
+    background-color: var(--teal); 
+    padding: 1rem; 
+}
+#experience-header {
+    font-size: 3rem;
+    margin: 0 auto;
+    width: 200px;
+    padding: 1rem;
+}
+
+ 
+
+@media (min-width: 600px) {
+    nav li:first-child {
+        flex-grow: 1;
+        flex-basis: auto;
+    }
+}
+
+
+
+/*element {
+    border: solid red 1px;
+    margin: auto;
+}
+#intro{
+    padding-bottom: 5rem;
+}
+.profile{
+    max-width: 1000px;
+    margin: auto;
+    padding-bottom: 1rem;
+}
+#intro h2{
+    font-size: 3rem;
+    font-weight: normal;
+}
+.experience li{
+    list-style: none;
+}
+#experience ul{
+    margin: 0%;
+    padding: 0%;
+    font: size 1.2em; 
+}
+#experience a {
+    color: wheat;
+}
+#hire {
+    background-color:var(--aquamarine);
+    justify-content: right;
+    width: 400px;
+    text-align:center;
+    margin:0% auto;
+    padding: 3rem;
+
+    .section-blue{
+        background-color: var(--blue);
+    }
+   
+    nav{
+        font-size: 80%;
+        padding: 1rem;
+        background-color: var(--aqua)
+    }
+    }
+     a:hover{
+        color: white;
+        text-decoration: none;
+        font-size: 1.2rem;
+    }
+    nav.li:first-child{
+        flex-grow: 1;
+        font-size: 1.5rem;
+        margin-left: 3 rem;
+    }
+    .button{
+        background-color: orangered;
+        padding: 0.5rem;
+        border-radius: 5px;
+    }
+    .button{
+        color: white;
+        background-color: #84B026;
+    }
+    .gradient-section{
+        height: 2px;
+        background:linear-gradient(90deg,rgba(codes)50%) 
+    }footer{
+        text-align: center;
+        padding: 2rem;
+    }
+.my picture{
+    max-height: 350px;
+    max-width: 500px;
+}
+.my picture img {
+width: 100%;
+border-radius: 5px;
+margin:1rem;
+}   
+#experience{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+#experience ul{
+    max-width: 400px;
+    border: solid white 2px;
+    border-radius: 5px;
+    background-color: var(--teal);
+    padding: 1rem;
+}
+#experience-header{
+    font-size: 3rem;
+    margin: auto;
+    width: 200px;
+    padding: 1rem;
+}
+}
+
+
+
+
+

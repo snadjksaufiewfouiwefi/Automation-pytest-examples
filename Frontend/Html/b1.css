@@ -1,0 +1,82 @@
+html{
+    box-sizing: border-box;
+}
+    
+* , *::after, *::before{
+    box-sizing: inherit;
+} 
+.row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.static{
+    width: 100px;
+    height: 100px;
+    background-color: brown;
+    border-radius: 50px;
+}
+
+.moving{
+    width: 50px;
+    height: 50px;
+    border: 5px solid red;
+   /* border-top: none;*/
+    background-color: blue;
+    border-radius: 25px;
+    animation-name: rotator;
+   animation-iteration-count: infinite;
+   animation-duration: 2s;
+   animation-timing-function: ease-out;
+}
+.moving:hover{
+    transform:rotate(270deg);/* different degree*/
+    background-color: blueviolet;/*scale is also used*//*rotate(45deg); translate(30px)
+   /* margin-left: 2000px;
+    /*transition-delay: 0s;/*START making the state change after 1sec
+    transition-duration: 5s;/*take 5s after the start to move to the final state
+    transition-property: all;/*all*//*background-color
+    transition-timing-function: ease-out;*/
+   /*transition: all 5s 1s ease-out;*/
+   /*animation-name: rotator;
+   animation-iteration-count: infinite;
+   animation-duration: 2s;
+   animation-timing-function: ease-out;*/
+
+}
+    
+/*.moving:hover{
+    transform: translate x();
+    background-color: red;
+    margin: 2000px;
+    transition-delay: 25;
+    transition-duration: 5s;
+    /*transition-property: margin-left;*/
+    /*transition-property: background color-;
+    transition-timing-function: ease-out;
+    /*transition: all 5s 1s ease-out;*/
+    /* animation-name: rotator;
+    animation-iteration-count: infinite;*/
+
+
+@keyframes rotator{
+    0%{
+        transform:translate(-500px);/* rotate(0);
+        background-color:blueviolet;*/
+    }
+    50%{
+        transform:translate(500px);
+       /* background-color: gold;
+    }*/
+}
+    100%{
+        transform:translate(-500px); /*rotate(180deg);
+        background-color: rgb(0, 255, 98);*/
+    }
+}
+
+   
+    
+
+    
