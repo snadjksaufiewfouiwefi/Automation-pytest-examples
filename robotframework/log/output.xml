@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0.1 (Python 3.12.4 on win32)" generated="2024-06-14T18:58:28.631491" rpa="false" schemaversion="5">
+<suite id="s1" name="GoogleSearch" source="C:\Users\Lenovo\PycharmProjects\robotframework\tests\Google\functionalTestSuite\GoogleSearch.robot">
+<test id="s1-t1" name="this is sample test case" line="8">
+<kw name="Open Browser">
+<msg time="2024-06-14T18:58:28.736634" level="FAIL">No keyword with name 'Open Browser' found.</msg>
+<arg>http://www.google.com</arg>
+<arg>chrome</arg>
+<status status="FAIL" start="2024-06-14T18:58:28.736634" elapsed="0.004024">No keyword with name 'Open Browser' found.</status>
+</kw>
+<kw name="Close Browser">
+<status status="NOT RUN" start="2024-06-14T18:58:28.741195" elapsed="0.000000"/>
+</kw>
+<doc>Google test</doc>
+<tag>regression</tag>
+<status status="FAIL" start="2024-06-14T18:58:28.731358" elapsed="0.009837">No keyword with name 'Open Browser' found.</status>
+</test>
+<status status="FAIL" start="2024-06-14T18:58:28.680595" elapsed="0.060600"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="1" skip="0">regression</stat>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="GoogleSearch">GoogleSearch</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2024-06-14T18:58:28.730337" level="ERROR">Error in file 'C:\Users\Lenovo\PycharmProjects\robotframework\tests\Google\functionalTestSuite\GoogleSearch.robot' on line 3: Importing library 'seleniumLibrary' failed: ModuleNotFoundError: No module named 'seleniumLibrary'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  C:\Users\Lenovo\AppData\Roaming\JetBrains\PyCharmCE2024.1\plugins\robotframework-intellij\lib\robotframework_debug_adapter
+  C:\Users\Lenovo\PycharmProjects\robotframework
+  C:\Users\Lenovo\AppData\Roaming\JetBrains\PyCharmCE2024.1\plugins\robotframework-intellij\lib
+  C:\Users\Lenovo\AppData\Roaming\JetBrains\PyCharmCE2024.1\plugins\robotframework-intellij\lib\robotframework_ls\vendored
+  C:\Users\Lenovo\AppData\Local\Programs\Python\Python312\python312.zip
+  C:\Users\Lenovo\AppData\Local\Programs\Python\Python312\DLLs
+  C:\Users\Lenovo\AppData\Local\Programs\Python\Python312\Lib
+  C:\Users\Lenovo\AppData\Local\Programs\Python\Python312
+  C:\Users\Lenovo\AppData\Local\Programs\Python\Python312\Lib\site-packages</msg>
+</errors>
+</robot>

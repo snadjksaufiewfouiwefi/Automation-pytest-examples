@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0.1 (Python 3.12.4 on win32)" generated="2024-10-11T19:09:31.952337" rpa="false" schemaversion="5">
+<suite id="s1" name="Count Row Coloumn" source="C:\Users\Lenovo\PycharmProjects\PythonTesting\firstBasic\Automation\count_row_coloumn.robot">
+<test id="s1-t1" name="Tablevalidation" line="6">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-10-11T19:09:32.271862" level="INFO">Opening browser 'chrome' to base url 'https://testautomationpractice.blogspot.com/'.</msg>
+<arg>https://testautomationpractice.blogspot.com/</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-10-11T19:09:32.271862" elapsed="10.980293"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-10-11T19:09:43.252155" elapsed="0.023240"/>
+</kw>
+<kw name="Get Element Count" owner="SeleniumLibrary">
+<msg time="2024-10-11T19:09:43.288262" level="INFO">${row} = 7</msg>
+<var>${row}</var>
+<arg>//table[@name='BookTable']/tbody/tr</arg>
+<doc>Returns the number of elements matching ``locator``.</doc>
+<status status="PASS" start="2024-10-11T19:09:43.275395" elapsed="0.012867"/>
+</kw>
+<kw name="Get Element Count" owner="SeleniumLibrary">
+<msg time="2024-10-11T19:09:43.291652" level="INFO">${coloumn} = 4</msg>
+<var>${coloumn}</var>
+<arg>//table[@name='BookTable']/tbody/tr/th</arg>
+<doc>Returns the number of elements matching ``locator``.</doc>
+<status status="PASS" start="2024-10-11T19:09:43.288262" elapsed="0.003390"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${row}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-10-11T19:09:43.291652" elapsed="0.000000"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${coloumn}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-10-11T19:09:43.291652" elapsed="0.000000"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-10-11T19:09:43.319389" level="INFO">${data} = Mukesh</msg>
+<var>${data}</var>
+<arg>//table[@name='BookTable']/tbody/tr[3]/td[2]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-11T19:09:43.291652" elapsed="0.027737"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${data}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-10-11T19:09:43.319918" elapsed="0.000000"/>
+</kw>
+<kw name="Table Column Should Contain" owner="SeleniumLibrary">
+<arg>//table[@name='BookTable']</arg>
+<arg>1</arg>
+<arg>BookName</arg>
+<doc>Verifies table column contains text ``expected``.</doc>
+<status status="PASS" start="2024-10-11T19:09:43.319918" elapsed="0.031254"/>
+</kw>
+<kw name="Table Row Should Contain" owner="SeleniumLibrary">
+<arg>//table[@name='BookTable']</arg>
+<arg>5</arg>
+<arg>Mukesh</arg>
+<doc>Verifies that table row contains text ``expected``.</doc>
+<status status="PASS" start="2024-10-11T19:09:43.351172" elapsed="0.030924"/>
+</kw>
+<kw name="Table Cell Should Contain" owner="SeleniumLibrary">
+<msg time="2024-10-11T19:09:43.465331" level="INFO">Table cell contains 'Amod'.</msg>
+<arg>//table[@name='BookTable']</arg>
+<arg>6</arg>
+<arg>2</arg>
+<arg>Amod</arg>
+<doc>Verifies table cell contains text ``expected``.</doc>
+<status status="PASS" start="2024-10-11T19:09:43.382096" elapsed="0.083235"/>
+</kw>
+<kw name="Table Header Should Contain" owner="SeleniumLibrary">
+<arg>//table[@name='BookTable']</arg>
+<arg>BookName</arg>
+<doc>Verifies table header contains text ``expected``.</doc>
+<status status="PASS" start="2024-10-11T19:09:43.465331" elapsed="0.039001"/>
+</kw>
+<status status="PASS" start="2024-10-11T19:09:32.271862" elapsed="11.233488"/>
+</test>
+<status status="PASS" start="2024-10-11T19:09:31.952337" elapsed="11.554026"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Count Row Coloumn">Count Row Coloumn</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
